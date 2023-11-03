@@ -33,6 +33,10 @@ function newElement() {
   toastAdd.classList.remove("hide");
   toastAdd.classList.add("show");
 
+  list.addEventListener("click", (e) => {
+    e.target.classList.toggle("checked");
+  });
+
   setTimeout(function () {
     toastAdd.classList.remove("show");
     toastAdd.classList.add("hide");
