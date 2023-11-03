@@ -1,7 +1,6 @@
 ![todo](todo.png)
 
 [![Stargazers](https://img.shields.io/github/stars/Asroyx/javascript-to-do-list.svg?style=social)](https://github.com/Asroyx/javascript-to-do-list)
-[![Latest release](https://img.shields.io/github/v/release/Asroyx/javascript-to-do-list)](https://github.com/Asroyx/javascript-to-do-list/releases/latest)
 
 # To-Do List Project
 
