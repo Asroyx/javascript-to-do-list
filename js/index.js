@@ -13,5 +13,9 @@ function newElement() {
   newElement.textContent = task;
   list.appendChild(newElement);
 
+  const toastAdd = document.getElementById("liveToastAdd");
+  toastAdd.classList.remove("hide");
+  toastAdd.classList.add("show");
+
   document.getElementById("task").value = "";
 }
