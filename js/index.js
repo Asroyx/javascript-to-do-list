@@ -18,6 +18,17 @@ function newElement() {
   newElement.textContent = task;
   list.appendChild(newElement);
 
+  const span = document.createElement("SPAN");
+
+  span.className = "close";
+  span.textContent = "\u00D7";
+
+  newElement.appendChild(span);
+
+  span.addEventListener("click", () => {
+    list.removeChild(newElement);
+  });
+
   const toastAdd = document.getElementById("liveToastAdd");
   toastAdd.classList.remove("hide");
   toastAdd.classList.add("show");
