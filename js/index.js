@@ -1,8 +1,13 @@
+const list = document.getElementById("list");
+
+list.addEventListener("click", (e) => {
+  e.target.classList.toggle("checked");
+});
+
 function newElement() {
   const task = document.getElementById("task").value;
   const toastError = document.getElementById("liveToastError");
   const toastAdd = document.getElementById("liveToastAdd");
-  const list = document.getElementById("list");
 
   if (task === "") {
     toastError.classList.replace("hide", "show");
@@ -23,10 +28,6 @@ function newElement() {
 
   toastAdd.classList.replace("hide", "show");
   setTimeout(() => toastAdd.classList.replace("show", "hide"), 2000);
-
-  list.addEventListener("click", (e) => {
-    e.target.classList.toggle("checked");
-  });
 
   document.getElementById("task").value = "";
 }
