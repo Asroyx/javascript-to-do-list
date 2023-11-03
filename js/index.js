@@ -2,9 +2,9 @@ function newElement() {
   const task = document.getElementById("task").value;
 
   if (task == "") {
-    const toast = document.getElementById("liveToastError");
-    toast.classList.remove("hide");
-    toast.classList.add("show");
+    const toastError = document.getElementById("liveToastError");
+    toastError.classList.remove("hide");
+    toastError.classList.add("show");
     return;
   }
 
