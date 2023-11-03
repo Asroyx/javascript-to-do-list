@@ -31,7 +31,13 @@ ul li:hover {
 }
 
 ul li.checked {
-  background: #276678;
+  background: #f78401b0;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked:nth-child(odd) {
+  background: #f78401a0;
   color: #fff;
   text-decoration: line-through;
 }
