@@ -59,7 +59,7 @@ function newElement() {
     list.removeChild(newElement);
     const index = tasks.findIndex((item) => item.task === task);
     tasks.splice(index, 1);
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    localStorage.removeItem("tasks", JSON.stringify(tasks));
   });
 
   newElement.addEventListener("click", () => {
