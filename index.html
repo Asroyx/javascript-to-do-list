@@ -70,7 +70,8 @@
           alt=""
         />
         <h2>Yapılacaklar Listesi</h2>
-        <input type="text" id="task" placeholder="Bugün ne yapacaksın?" />
+        <input type="text" id="task" placeholder="Bugün ne yapacaksın?" 
+        onkeydown="if (event.which == 13 || event.keyCode == 13) { submit(); } "/>
         <span onclick="newElement()" id="liveToastBtn" class="button"
           >Ekle</span
         >
